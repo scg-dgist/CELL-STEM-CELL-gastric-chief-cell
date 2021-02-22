@@ -1,1 +1,1 @@
-# p57_gastric_chief_cells
+# gastric-chief-cells
