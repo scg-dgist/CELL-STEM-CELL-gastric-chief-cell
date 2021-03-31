@@ -75,7 +75,7 @@ tca <- TCA(design = coldata,
 
 tca <- DBanalysis(tca)
 
-tca <- timecourseTable(tca, value = "FC", norm.method = FALSE, filter = TRUE, abs.fold=1, pvalue.threshold = 0.05)
+tca <- timecourseTable(tca, value = "FC", norm.method = FALSE, filter = TRUE, abs.fold=1, pvalue.threshold = 0.01)
 
 i=6
 set.seed(i)
