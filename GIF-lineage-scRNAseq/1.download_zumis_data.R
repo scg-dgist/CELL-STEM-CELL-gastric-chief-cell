@@ -1,5 +1,3 @@
-.libPaths(Sys.getenv("R_LIBS_STOMACH"))
-
 library(SingleCellExperiment)
 
 load("D:/somi_function/ensemblGenes_mmusculus_2019-12-12.RData")
@@ -30,7 +28,3 @@ for(sample in samples){
 }
 rm(sce)
 rm(count)
-
-for(sample in samples){
-  save(list = paste0("gif_sce.", sample), file=paste0(rdatadir, "sce/gif_sce.", sample))
-}
