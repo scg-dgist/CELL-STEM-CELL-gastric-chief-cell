@@ -1,5 +1,3 @@
-.libPaths(Sys.getenv("R_LIBS_STOMACH"))
-
 load("D:/somi_function/ensemblGenes_mmusculus_2019-12-12.RData")
 
 rdatadir = "rdata3/"
@@ -75,8 +73,4 @@ hvg_function <- function(sce){
 }
 
 gif_hvg.norm <- hvg_function(gif_sce.norm) # 239
-
-save(gif_sce, file=paste0(rdatadir, "sce/gif_sce.RData"))
-save(gif_sce.norm, file=paste0(rdatadir, "sce/gif_sce.norm.RData"))
-save(gif_hvg.norm, file=paste0(rdatadir, "sce/gif_hvg.norm.RData"))
 
