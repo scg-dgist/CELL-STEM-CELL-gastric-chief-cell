@@ -1,5 +1,3 @@
-.libPaths(Sys.getenv("R_LIBS_STOMACH"))
-
 load("D:/somi_function/ensemblGenes_mmusculus_2019-12-12.RData")
 
 rdatadir = "rdata3/"
@@ -159,11 +157,4 @@ for(i in 1:6){
   
   assign(paste0("gif_sce.", samples[i]), sce1)
   assign(paste0("gif_sce.qc.", samples[i]), sce.qc)
-}
-
-for(i in samples){
-  objectname = paste0("gif_sce.", i)
-  save(list = objectname, file=paste0(rdatadir, "sce/", objectname, ".RData"))
-  objectname = paste0("gif_sce.qc.", i)
-  save(list = objectname, file=paste0(rdatadir, "sce.qc/", objectname, ".RData"))
 }
